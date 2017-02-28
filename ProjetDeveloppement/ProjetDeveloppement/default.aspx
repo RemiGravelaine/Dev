@@ -13,7 +13,7 @@
     <div>
     Hello world
         <br />
-        <asp:Label runat="server" />
+        <asp:Label id="labelTest" runat="server" />
     </div>
     </form>
 </body>

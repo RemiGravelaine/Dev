@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BLL;
 
 namespace ProjetDeveloppement
 {
@@ -11,7 +12,8 @@ namespace ProjetDeveloppement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            AbonneManager abonne = new AbonneManager();
+            labelTest.Text = abonne.GetInfoAbonne("Remi").Nom;
         }
     }
 }
