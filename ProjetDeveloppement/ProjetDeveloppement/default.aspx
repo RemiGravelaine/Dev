@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="ProjetDeveloppement._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ProjetDeveloppement._default" %>
 
 <!DOCTYPE html>
 
@@ -12,6 +12,8 @@
     <form id="form1" runat="server">
     <div>
     Hello world
+        <br />
+        <asp:Label runat="server" />
     </div>
     </form>
 </body>
