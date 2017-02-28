@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BLL;
+using WcfServiceLibrary;
 
 namespace ProjetDeveloppement
 {
@@ -12,8 +13,8 @@ namespace ProjetDeveloppement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AbonneManager abonne = new AbonneManager();
-            labelTest.Text = abonne.GetInfoAbonne("Remi").Nom;
+            AbonneServiceLibrary abonneService = new AbonneServiceLibrary();
+            labelTest.Text = abonneService.GetInfoAbonne("Remi").Id;
         }
     }
 }
