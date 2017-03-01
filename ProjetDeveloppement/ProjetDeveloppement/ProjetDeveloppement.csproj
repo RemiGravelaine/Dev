@@ -101,6 +101,20 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Properties\DataSources\DTO.AbonneEntity.datasource" />
+    <None Include="Service References\ServiceLibraryWcf\DTO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceLibraryWcf\ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceLibraryWcf\service.wsdl" />
+    <None Include="Service References\ServiceLibraryWcf\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceLibraryWcf\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,6 +126,12 @@
     <Content Include="Default.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <None Include="Service References\ServiceLibraryWcf\configuration91.svcinfo" />
+    <None Include="Service References\ServiceLibraryWcf\configuration.svcinfo" />
+    <None Include="Service References\ServiceLibraryWcf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -123,20 +143,17 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceLibraryWcf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{1c37999b-153c-47ba-afc9-2210e8ea3dee}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{ce48de78-0863-49f8-a002-eacdfae38714}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WcfServiceLibrary\WcfServiceLibrary.csproj">
-      <Project>{2d08622c-3e38-4996-975b-733d373d9646}</Project>
-      <Name>WcfServiceLibrary</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceLibraryWcf\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

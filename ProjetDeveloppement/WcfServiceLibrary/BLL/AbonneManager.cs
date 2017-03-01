@@ -1,4 +1,5 @@
 ﻿using DAL;
+using DTO;
 
 namespace BLL
 {

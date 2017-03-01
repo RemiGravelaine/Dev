@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using BLL;
-using WcfServiceLibrary;
+using ProjetDeveloppement.ServiceLibraryWcf;
 
 namespace ProjetDeveloppement
 {
@@ -13,8 +7,8 @@ namespace ProjetDeveloppement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AbonneServiceLibrary abonneService = new AbonneServiceLibrary();
-            labelTest.Text = abonneService.GetInfoAbonne("Remi").Id;
+            AbonneServiceLibraryClient abonne = new AbonneServiceLibraryClient();
+            labelTest.Text = abonne.GetInfoAbonne("ersdfsdf").Id;
         }
     }
 }

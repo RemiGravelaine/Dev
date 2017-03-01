@@ -44,12 +44,6 @@
     <Compile Include="AbonneProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{ce48de78-0863-49f8-a002-eacdfae38714}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

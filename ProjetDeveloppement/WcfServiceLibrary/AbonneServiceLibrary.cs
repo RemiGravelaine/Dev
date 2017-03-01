@@ -1,11 +1,5 @@
 ﻿using BLL;
 using DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
 
 namespace WcfServiceLibrary
 {
@@ -16,6 +10,11 @@ namespace WcfServiceLibrary
         public AbonneEntity GetInfoAbonne(string nom)
         {
             return new AbonneManager().GetInfoAbonne(nom);
+        }
+
+        public AbonneEntity test(string nom)
+        {
+            return new AbonneEntity();
         }
     }
 }

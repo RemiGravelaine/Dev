@@ -1,10 +1,5 @@
 ﻿using DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
 
 namespace WcfServiceLibrary
 {
@@ -14,5 +9,10 @@ namespace WcfServiceLibrary
     {
         [OperationContract]
         AbonneEntity GetInfoAbonne(string nom);
+
+        [OperationContract]
+        AbonneEntity test(string nom);
+
+
     }
 }
