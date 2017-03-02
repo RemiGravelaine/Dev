@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="ODybMWpvIqcvuMRMBqccvTZnXrc=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="wue8ZwySbLJ1Q5SlbBPRzyx3bvk=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IAbonneServiceLibrary">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IAbonneServiceLibrary" contract="ServiceLibraryWcf.IAbonneServiceLibrary" bindingType="basicHttpBinding" address="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/Service1/" bindingConfiguration="BasicHttpBinding_IAbonneServiceLibrary">
+    <endpoint name="BasicHttpBinding_IAbonneServiceLibrary" contract="ServiceReference.IAbonneServiceLibrary" bindingType="basicHttpBinding" address="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/Service1/" bindingConfiguration="BasicHttpBinding_IAbonneServiceLibrary">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/Service1/</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>BasicHttpBinding_IAbonneServiceLibrary</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ServiceLibraryWcf.IAbonneServiceLibrary</serializedValue>
+          <serializedValue>ServiceReference.IAbonneServiceLibrary</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

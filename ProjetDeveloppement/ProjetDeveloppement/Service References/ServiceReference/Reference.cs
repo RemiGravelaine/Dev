@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjetDeveloppement.ServiceLibraryWcf {
+namespace ProjetDeveloppement.ServiceReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -91,29 +91,29 @@ namespace ProjetDeveloppement.ServiceLibraryWcf {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceLibraryWcf.IAbonneServiceLibrary")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IAbonneServiceLibrary")]
     public interface IAbonneServiceLibrary {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAbonneServiceLibrary/GetInfoAbonne", ReplyAction="http://tempuri.org/IAbonneServiceLibrary/GetInfoAbonneResponse")]
-        ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity GetInfoAbonne(string nom);
+        ProjetDeveloppement.ServiceReference.AbonneEntity GetInfoAbonne(string nom);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAbonneServiceLibrary/GetInfoAbonne", ReplyAction="http://tempuri.org/IAbonneServiceLibrary/GetInfoAbonneResponse")]
-        System.Threading.Tasks.Task<ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity> GetInfoAbonneAsync(string nom);
+        System.Threading.Tasks.Task<ProjetDeveloppement.ServiceReference.AbonneEntity> GetInfoAbonneAsync(string nom);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAbonneServiceLibrary/AddAbonne", ReplyAction="http://tempuri.org/IAbonneServiceLibrary/AddAbonneResponse")]
-        void AddAbonne(ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity abonne);
+        void AddAbonne(ProjetDeveloppement.ServiceReference.AbonneEntity abonne);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAbonneServiceLibrary/AddAbonne", ReplyAction="http://tempuri.org/IAbonneServiceLibrary/AddAbonneResponse")]
-        System.Threading.Tasks.Task AddAbonneAsync(ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity abonne);
+        System.Threading.Tasks.Task AddAbonneAsync(ProjetDeveloppement.ServiceReference.AbonneEntity abonne);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IAbonneServiceLibraryChannel : ProjetDeveloppement.ServiceLibraryWcf.IAbonneServiceLibrary, System.ServiceModel.IClientChannel {
+    public interface IAbonneServiceLibraryChannel : ProjetDeveloppement.ServiceReference.IAbonneServiceLibrary, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class AbonneServiceLibraryClient : System.ServiceModel.ClientBase<ProjetDeveloppement.ServiceLibraryWcf.IAbonneServiceLibrary>, ProjetDeveloppement.ServiceLibraryWcf.IAbonneServiceLibrary {
+    public partial class AbonneServiceLibraryClient : System.ServiceModel.ClientBase<ProjetDeveloppement.ServiceReference.IAbonneServiceLibrary>, ProjetDeveloppement.ServiceReference.IAbonneServiceLibrary {
         
         public AbonneServiceLibraryClient() {
         }
@@ -134,19 +134,19 @@ namespace ProjetDeveloppement.ServiceLibraryWcf {
                 base(binding, remoteAddress) {
         }
         
-        public ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity GetInfoAbonne(string nom) {
+        public ProjetDeveloppement.ServiceReference.AbonneEntity GetInfoAbonne(string nom) {
             return base.Channel.GetInfoAbonne(nom);
         }
         
-        public System.Threading.Tasks.Task<ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity> GetInfoAbonneAsync(string nom) {
+        public System.Threading.Tasks.Task<ProjetDeveloppement.ServiceReference.AbonneEntity> GetInfoAbonneAsync(string nom) {
             return base.Channel.GetInfoAbonneAsync(nom);
         }
         
-        public void AddAbonne(ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity abonne) {
+        public void AddAbonne(ProjetDeveloppement.ServiceReference.AbonneEntity abonne) {
             base.Channel.AddAbonne(abonne);
         }
         
-        public System.Threading.Tasks.Task AddAbonneAsync(ProjetDeveloppement.ServiceLibraryWcf.AbonneEntity abonne) {
+        public System.Threading.Tasks.Task AddAbonneAsync(ProjetDeveloppement.ServiceReference.AbonneEntity abonne) {
             return base.Channel.AddAbonneAsync(abonne);
         }
     }
