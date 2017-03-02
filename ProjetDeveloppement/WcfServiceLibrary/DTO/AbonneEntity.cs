@@ -4,6 +4,14 @@ namespace DTO
 {
     public class AbonneEntity
     {
+
+        public AbonneEntity()
+        {
+            Id = string.Empty;
+            Nom = string.Empty;
+            Prenom = string.Empty;
+        }
+
         /// <summary>
         /// Identifiant de l'abonné
         /// </summary>

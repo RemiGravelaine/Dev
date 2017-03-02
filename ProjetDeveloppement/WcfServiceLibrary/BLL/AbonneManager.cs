@@ -16,5 +16,13 @@ namespace BLL
             return new AbonneProvider().GetInfoAbonne(name);
         }
 
+        public void AddAbonneManager(AbonneEntity abonne)
+        {
+            if (!string.IsNullOrEmpty(abonne.Nom) && !string.IsNullOrEmpty(abonne.Prenom))
+            {
+                new AbonneProvider().AddAbonneProvider(abonne);
+            }
+        }
+
     }
 }

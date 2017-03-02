@@ -7,15 +7,13 @@
     <title>Page par défault</title>
     <meta name="description" content="The description of my page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    Hello world
-        <br />
-        <asp:Label id="labelTest" runat="server" />
-    </div>
+        <div>
+            Hello world
+        </div>
     </form>
 </body>
 </html>

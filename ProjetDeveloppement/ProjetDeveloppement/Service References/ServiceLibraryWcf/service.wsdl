@@ -13,20 +13,20 @@
   <wsdl:message name="IAbonneServiceLibrary_GetInfoAbonne_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetInfoAbonneResponse" />
   </wsdl:message>
-  <wsdl:message name="IAbonneServiceLibrary_test_InputMessage">
-    <wsdl:part name="parameters" element="tns:test" />
+  <wsdl:message name="IAbonneServiceLibrary_AddAbonne_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAbonne" />
   </wsdl:message>
-  <wsdl:message name="IAbonneServiceLibrary_test_OutputMessage">
-    <wsdl:part name="parameters" element="tns:testResponse" />
+  <wsdl:message name="IAbonneServiceLibrary_AddAbonne_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAbonneResponse" />
   </wsdl:message>
   <wsdl:portType name="IAbonneServiceLibrary">
     <wsdl:operation name="GetInfoAbonne">
       <wsdl:input wsaw:Action="http://tempuri.org/IAbonneServiceLibrary/GetInfoAbonne" message="tns:IAbonneServiceLibrary_GetInfoAbonne_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAbonneServiceLibrary/GetInfoAbonneResponse" message="tns:IAbonneServiceLibrary_GetInfoAbonne_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="test">
-      <wsdl:input wsaw:Action="http://tempuri.org/IAbonneServiceLibrary/test" message="tns:IAbonneServiceLibrary_test_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IAbonneServiceLibrary/testResponse" message="tns:IAbonneServiceLibrary_test_OutputMessage" />
+    <wsdl:operation name="AddAbonne">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAbonneServiceLibrary/AddAbonne" message="tns:IAbonneServiceLibrary_AddAbonne_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAbonneServiceLibrary/AddAbonneResponse" message="tns:IAbonneServiceLibrary_AddAbonne_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAbonneServiceLibrary" type="tns:IAbonneServiceLibrary">
@@ -40,8 +40,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="test">
-      <soap:operation soapAction="http://tempuri.org/IAbonneServiceLibrary/test" style="document" />
+    <wsdl:operation name="AddAbonne">
+      <soap:operation soapAction="http://tempuri.org/IAbonneServiceLibrary/AddAbonne" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

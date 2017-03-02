@@ -7,8 +7,7 @@ namespace ProjetDeveloppement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AbonneServiceLibraryClient abonne = new AbonneServiceLibraryClient();
-            labelTest.Text = abonne.GetInfoAbonne("Gravelaine").Id;
-        }
+            
+        }        
     }
 }

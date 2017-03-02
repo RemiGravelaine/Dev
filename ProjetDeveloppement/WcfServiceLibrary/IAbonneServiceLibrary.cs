@@ -11,8 +11,7 @@ namespace WcfServiceLibrary
         AbonneEntity GetInfoAbonne(string nom);
 
         [OperationContract]
-        AbonneEntity test(string nom);
-
+        void AddAbonne(AbonneEntity abonne);
 
     }
 }

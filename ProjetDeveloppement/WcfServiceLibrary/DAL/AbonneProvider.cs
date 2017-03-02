@@ -5,10 +5,10 @@ namespace DAL
 {
     public class AbonneProvider
     {
+        List<AbonneEntity> listAbonne = new List<AbonneEntity>();
         public AbonneEntity GetInfoAbonne(string nom)
         {
 
-            List<AbonneEntity> listAbonne = new List<AbonneEntity>();
 
             AbonneEntity abonne = new AbonneEntity();
             abonne.Prenom = "Remi";
@@ -24,6 +24,11 @@ namespace DAL
             //Appel à la base de données
             return listAbonne.Find(e => e.Nom == nom) ?? new AbonneEntity();
 
+        }
+
+        public void AddAbonneProvider(AbonneEntity abonne)
+        {
+            listAbonne.Add(abonne);
         }
     }
 }
