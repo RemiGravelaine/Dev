@@ -10,8 +10,11 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
+        <%--<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />--%>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -38,41 +41,52 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="header">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="w3layouts-logo">
+                            <h1><a href="index.html">Hosting <span>City</span></a></h1>
+                        </div>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                        <nav>
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="about.html" class="hvr-sweep-to-bottom">About</a></li>
+                                <li><a href="plans.html" class="hvr-sweep-to-bottom">Plans</a></li>
                                 <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    <a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="hvr-sweep-to-bottom" href="services.html">Services</a></li>
+                                        <li><a class="hvr-sweep-to-bottom" href="faq.html">FAQs</a></li>
+                                        <li><a class="hvr-sweep-to-bottom" href="login.html">Login</a></li>
+                                        <li><a class="hvr-sweep-to-bottom" href="registration.html">Registration</a></li>
+                                        <li><a class="hvr-sweep-to-bottom" href="icons.html">Icons</a></li>
+                                        <li><a class="hvr-sweep-to-bottom" href="typography.html">Typography</a></li>
+                                    </ul>
                                 </li>
+                                <li><a href="blog.html" class="hvr-sweep-to-bottom">Blog</a></li>
+                                <li><a href="mail.html" class="hvr-sweep-to-bottom">Mail Us</a></li>
                             </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
+                        </nav>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
             </div>
         </div>
+
+
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
