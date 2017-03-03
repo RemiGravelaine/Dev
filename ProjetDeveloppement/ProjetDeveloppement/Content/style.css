@@ -1,0 +1,29 @@
+﻿html, body {
+    font-size: 100%;
+}
+
+form {
+    background: #e8f1ed;
+}
+
+#title-nav {
+    font-size: 14px;
+    padding: 35px 25px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+    #title-nav nav {
+        position: relative;
+        display: block;
+    }
+
+        #title-nav nav li {
+            color: white;
+            background-color: transparent;
+        }
+
+            #title-nav nav li:hover {
+                background-color: lightgreen;
+                color: white;
+            }
